@@ -1,0 +1,37 @@
+/* CSS para el h1 de la página */
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    background: linear-gradient(90deg,
+            #ff00ff,
+            #00ffff,
+            #ffff00,
+            #ff00ff);
+
+    background-size: 400% 400%;
+
+    animation: gradientAnimation 8s ease infinite;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+}
